@@ -28,6 +28,19 @@
 		F43AFAD92693407500F7F89F /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43AFAD82693407500F7F89F /* SearchView.swift */; };
 		F43AFADB2693407E00F7F89F /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43AFADA2693407E00F7F89F /* CategoriesView.swift */; };
 		F43AFADD2693408600F7F89F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43AFADC2693408600F7F89F /* HomeView.swift */; };
+		F43AFAE026955E6400F7F89F /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43AFADF26955E6400F7F89F /* CategoryView.swift */; };
+		F43AFAE22695736800F7F89F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43AFAE12695736800F7F89F /* LoginViewModel.swift */; };
+		F43AFAE42695758300F7F89F /* ConfigModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43AFAE32695758300F7F89F /* ConfigModel.swift */; };
+		F43AFAE6269575DD00F7F89F /* FavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43AFAE5269575DD00F7F89F /* FavoriteModel.swift */; };
+		F43AFAE82695760400F7F89F /* BasicParamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43AFAE72695760400F7F89F /* BasicParamModel.swift */; };
+		F43AFAEC269576E900F7F89F /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43AFAEB269576E900F7F89F /* MenuModel.swift */; };
+		F43AFAEE2695774F00F7F89F /* PermissionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43AFAED2695774F00F7F89F /* PermissionModel.swift */; };
+		F43AFAF0269577DC00F7F89F /* LoginResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43AFAEF269577DC00F7F89F /* LoginResponseModel.swift */; };
+		F43AFAF3269584C400F7F89F /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43AFAF2269584C400F7F89F /* APIClient.swift */; };
+		F43AFAF526958E5200F7F89F /* MysRequestContextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43AFAF426958E5200F7F89F /* MysRequestContextModel.swift */; };
+		F43AFAF72695914C00F7F89F /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43AFAF62695914C00F7F89F /* Utility.swift */; };
+		F43AFAF9269594A700F7F89F /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43AFAF8269594A700F7F89F /* LoginModel.swift */; };
+		F43AFAFB2695AC0B00F7F89F /* CustomNavigationCloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43AFAFA2695AC0B00F7F89F /* CustomNavigationCloseButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +67,19 @@
 		F43AFAD82693407500F7F89F /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		F43AFADA2693407E00F7F89F /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
 		F43AFADC2693408600F7F89F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F43AFADF26955E6400F7F89F /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		F43AFAE12695736800F7F89F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F43AFAE32695758300F7F89F /* ConfigModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigModel.swift; sourceTree = "<group>"; };
+		F43AFAE5269575DD00F7F89F /* FavoriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteModel.swift; sourceTree = "<group>"; };
+		F43AFAE72695760400F7F89F /* BasicParamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicParamModel.swift; sourceTree = "<group>"; };
+		F43AFAEB269576E900F7F89F /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
+		F43AFAED2695774F00F7F89F /* PermissionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionModel.swift; sourceTree = "<group>"; };
+		F43AFAEF269577DC00F7F89F /* LoginResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseModel.swift; sourceTree = "<group>"; };
+		F43AFAF2269584C400F7F89F /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		F43AFAF426958E5200F7F89F /* MysRequestContextModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MysRequestContextModel.swift; sourceTree = "<group>"; };
+		F43AFAF62695914C00F7F89F /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		F43AFAF8269594A700F7F89F /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		F43AFAFA2695AC0B00F7F89F /* CustomNavigationCloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationCloseButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,21 +112,20 @@
 		F43AFAA32692D99C00F7F89F /* Ammarion */ = {
 			isa = PBXGroup;
 			children = (
+				F43AFAF2269584C400F7F89F /* APIClient.swift */,
 				F43AFAA42692D99C00F7F89F /* AppDelegate.swift */,
 				F43AFAA62692D99C00F7F89F /* SceneDelegate.swift */,
-				F43AFAA82692D99C00F7F89F /* ContentView.swift */,
-				F43AFADE2693476900F7F89F /* MainViews */,
 				F43AFAAA2692D99D00F7F89F /* Assets.xcassets */,
 				F43AFAAF2692D99D00F7F89F /* LaunchScreen.storyboard */,
 				F43AFAB22692D99D00F7F89F /* Info.plist */,
 				F43AFAAC2692D99D00F7F89F /* Preview Content */,
-				F43AFAB82692D9B700F7F89F /* LoginView.swift */,
-				F43AFAC42692F89500F7F89F /* SignInView.swift */,
-				F43AFAC62692F89F00F7F89F /* SignUpView.swift */,
-				F43AFAD3269331E300F7F89F /* ConfirmView.swift */,
+				F43AFAF12695790000F7F89F /* Views */,
+				F43AFAEA269576AE00F7F89F /* ViewModels */,
+				F43AFAE9269576A700F7F89F /* Models */,
 				F43AFAC32692F83400F7F89F /* Extensions */,
 				F43AFACA2693029300F7F89F /* CustomStyles */,
 				F43AFAD52693388600F7F89F /* CustomViews */,
+				F43AFAF62695914C00F7F89F /* Utility.swift */,
 			);
 			path = Ammarion;
 			sourceTree = "<group>";
@@ -152,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				F43AFAD0269313B600F7F89F /* CustomSignInByButton.swift */,
+				F43AFAFA2695AC0B00F7F89F /* CustomNavigationCloseButton.swift */,
 			);
 			path = CustomButtons;
 			sourceTree = "<group>";
@@ -172,8 +198,45 @@
 				F43AFAD82693407500F7F89F /* SearchView.swift */,
 				F43AFADA2693407E00F7F89F /* CategoriesView.swift */,
 				F43AFADC2693408600F7F89F /* HomeView.swift */,
+				F43AFADF26955E6400F7F89F /* CategoryView.swift */,
 			);
 			path = MainViews;
+			sourceTree = "<group>";
+		};
+		F43AFAE9269576A700F7F89F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F43AFAE32695758300F7F89F /* ConfigModel.swift */,
+				F43AFAE5269575DD00F7F89F /* FavoriteModel.swift */,
+				F43AFAE72695760400F7F89F /* BasicParamModel.swift */,
+				F43AFAEB269576E900F7F89F /* MenuModel.swift */,
+				F43AFAED2695774F00F7F89F /* PermissionModel.swift */,
+				F43AFAEF269577DC00F7F89F /* LoginResponseModel.swift */,
+				F43AFAF8269594A700F7F89F /* LoginModel.swift */,
+				F43AFAF426958E5200F7F89F /* MysRequestContextModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F43AFAEA269576AE00F7F89F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F43AFAE12695736800F7F89F /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F43AFAF12695790000F7F89F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F43AFAA82692D99C00F7F89F /* ContentView.swift */,
+				F43AFADE2693476900F7F89F /* MainViews */,
+				F43AFAB82692D9B700F7F89F /* LoginView.swift */,
+				F43AFAC42692F89500F7F89F /* SignInView.swift */,
+				F43AFAC62692F89F00F7F89F /* SignUpView.swift */,
+				F43AFAD3269331E300F7F89F /* ConfirmView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,18 +312,31 @@
 				F43AFAA52692D99C00F7F89F /* AppDelegate.swift in Sources */,
 				F43AFACC269302A000F7F89F /* CustomTextFieldStyle.swift in Sources */,
 				F43AFAA72692D99C00F7F89F /* SceneDelegate.swift in Sources */,
+				F43AFAF526958E5200F7F89F /* MysRequestContextModel.swift in Sources */,
 				F43AFAD4269331E300F7F89F /* ConfirmView.swift in Sources */,
 				F43AFAB92692D9B700F7F89F /* LoginView.swift in Sources */,
 				F43AFABB2692EDF400F7F89F /* Color.swift in Sources */,
+				F43AFAE026955E6400F7F89F /* CategoryView.swift in Sources */,
+				F43AFAF72695914C00F7F89F /* Utility.swift in Sources */,
+				F43AFAF3269584C400F7F89F /* APIClient.swift in Sources */,
 				F43AFADB2693407E00F7F89F /* CategoriesView.swift in Sources */,
+				F43AFAEC269576E900F7F89F /* MenuModel.swift in Sources */,
+				F43AFAE22695736800F7F89F /* LoginViewModel.swift in Sources */,
+				F43AFAE6269575DD00F7F89F /* FavoriteModel.swift in Sources */,
 				F43AFAD1269313B600F7F89F /* CustomSignInByButton.swift in Sources */,
+				F43AFAE42695758300F7F89F /* ConfigModel.swift in Sources */,
 				F43AFAD72693406700F7F89F /* ProfileView.swift in Sources */,
 				F43AFADD2693408600F7F89F /* HomeView.swift in Sources */,
 				F43AFAC9269301BA00F7F89F /* CustomGradientButtonStyle.swift in Sources */,
+				F43AFAEE2695774F00F7F89F /* PermissionModel.swift in Sources */,
 				F43AFABF2692F23400F7F89F /* CustonWhiteButtonStyle.swift in Sources */,
+				F43AFAE82695760400F7F89F /* BasicParamModel.swift in Sources */,
 				F43AFACF2693132900F7F89F /* CutomDividerView.swift in Sources */,
 				F43AFAC12692F24100F7F89F /* CustomClearButtonStyle.swift in Sources */,
+				F43AFAF0269577DC00F7F89F /* LoginResponseModel.swift in Sources */,
+				F43AFAF9269594A700F7F89F /* LoginModel.swift in Sources */,
 				F43AFAD92693407500F7F89F /* SearchView.swift in Sources */,
+				F43AFAFB2695AC0B00F7F89F /* CustomNavigationCloseButton.swift in Sources */,
 				F43AFAC52692F89500F7F89F /* SignInView.swift in Sources */,
 				F43AFAC72692F89F00F7F89F /* SignUpView.swift in Sources */,
 				F43AFAA92692D99C00F7F89F /* ContentView.swift in Sources */,

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ConfigModel {
+struct ConfigModel: Decodable, Hashable {
     let appUrl: String
     let clientkey: String
     let direction: String

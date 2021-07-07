@@ -8,37 +8,47 @@
 import SwiftUI
 
 struct SignInView: View {
+    @Environment(\.presentationMode) var presentationMode
+    
     @State private var mobileNumber: String = ""
     
     var body: some View {
-        ZStack {
-            VStack {
-                VStack(spacing: 20.0) {
-                    Text("ورود")
-                    
-                    TextField("شماره موبایل", text: $mobileNumber)
-                        .textFieldStyle(CustomTextFieldStyle())
-                    
-                    Button("ارسال کد") {
-                        print("SignIn button tapped.")
+        NavigationView {
+            ZStack {
+                VStack {
+                    VStack(spacing: 20.0) {
+                        Text("ورود")
+                        
+                        TextField("شماره موبایل", text: $mobileNumber)
+                            .textFieldStyle(CustomTextFieldStyle())
+                        
+                        Button("ارسال کد") {
+                            print("SignIn button tapped.")
+                        }
+                        .buttonStyle(CustomGradientButtonStyle())
+                        
                     }
-                    .buttonStyle(CustomGradientButtonStyle())
                     
+                    VStack(spacing: 10.0) {
+                        CustomDividerView(label: "ورود توسط", horizontalPadding: 20.0)
+                        
+                        CustomSignInByButton(signInType: .google) {
+                            print("SignIn by Google tapped.")
+                        }
+                        
+                        CustomSignInByButton(signInType: .email) {
+                            print("SignIn by Email Tapped")
+                        }
+                        
+                        CustomSignInByButton(signInType: .facebook) {
+                            print("SignIn by Facebook tapped.")
+                        }
+                    }
                 }
-                
-                VStack(spacing: 10.0) {
-                    CustomDividerView(label: "ورود توسط", horizontalPadding: 20.0)
-                    
-                    CustomSignInByButton(signInType: .google) {
-                        print("SignIn by Google tapped.")
-                    }
-                    
-                    CustomSignInByButton(signInType: .email) {
-                        print("SignIn by Email Tapped")
-                    }
-                    
-                    CustomSignInByButton(signInType: .facebook) {
-                        print("SignIn by Facebook tapped.")
+            }.toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    CustomNavigationCloseButton {
+                        presentationMode.wrappedValue.dismiss()
                     }
                 }
             }

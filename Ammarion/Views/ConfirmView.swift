@@ -8,29 +8,41 @@
 import SwiftUI
 
 struct ConfirmView: View {
-    @State private var confirmCode: String = ""
-    let mobileNumber: String
-    var body: some View {
-        ZStack {
-            VStack {
-                VStack(spacing: 10.0) {
-                    Text("احراز هویت")
-                        .padding(.bottom, 40.0)
-                    
-                    Text("لطفاً کد ارسال شده به شماره \(mobileNumber) را وارد نمائید.")
-                    
-                    TextField("کد تایید", text: $confirmCode)
-                        .textFieldStyle(CustomTextFieldStyle())
+    @Environment(\.presentationMode) var presentationMode
 
-                    Button("ورود") {
-                        print("SignIn button tapped.")
+    @State private var confirmCode: String = ""
+    
+    let mobileNumber: String
+    
+    var body: some View {
+        NavigationView {
+            ZStack {
+                VStack {
+                    VStack(spacing: 10.0) {
+                        Text("احراز هویت")
+                            .padding(.bottom, 40.0)
+                        
+                        Text("لطفاً کد ارسال شده به شماره \(mobileNumber) را وارد نمائید.")
+                        
+                        TextField("کد تایید", text: $confirmCode)
+                            .textFieldStyle(CustomTextFieldStyle())
+                        
+                        Button("ورود") {
+                            print("SignIn button tapped.")
+                        }
+                        .buttonStyle(CustomGradientButtonStyle())
+                        
+                        Button("ارسال مجدد کد احراز هویت") {
+                            print("SendCodeAgain button tapped.")
+                        }
+                        .padding(.top, 40.0)
                     }
-                    .buttonStyle(CustomGradientButtonStyle())
-                    
-                    Button("ارسال مجدد کد احراز هویت") {
-                        print("SendCodeAgain button tapped.")
+                }
+            }.toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    CustomNavigationCloseButton {
+                        presentationMode.wrappedValue.dismiss()
                     }
-                    .padding(.top, 40.0)
                 }
             }
         }

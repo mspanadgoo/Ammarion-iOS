@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct BasicParamModel {
+struct BasicParamModel: Decodable, Hashable {
     let culture: String
     let deviceName: String
     let imei: String

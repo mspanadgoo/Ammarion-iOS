@@ -12,6 +12,9 @@ struct LoginView: View {
         gradient: Gradient(colors: [Color.white, Color.customThemeGreen]),
         startPoint: .top, endPoint: .bottom)
     
+    @State var presentingSignInView = false
+    @State var presentingSignUpView = false
+
     var body: some View {
         ZStack {
             backgroundGradient
@@ -22,11 +25,17 @@ struct LoginView: View {
                 
                 Button("ورود") {
                     print("SignIn button tapped.")
-                }.padding(.horizontal).buttonStyle(CustonWhiteButtonStyle())
+                    presentingSignInView.toggle()
+                }
+                .sheet(isPresented: $presentingSignInView) { SignInView() }
+                .padding(.horizontal).buttonStyle(CustonWhiteButtonStyle())
                 
                 Button("ثبت نام") {
                     print("SignUp button tapped.")
-                }.padding(.horizontal).buttonStyle(CustomClearButtonStyle())
+                    presentingSignUpView.toggle()
+                }
+                .sheet(isPresented: $presentingSignUpView) { SignUpView() }
+                .padding(.horizontal).buttonStyle(CustomClearButtonStyle())
             }
         }
     }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FavoriteModel {
+struct FavoriteModel: Decodable, Hashable {
     let basicParams: [BasicParamModel]
     let explanation: String
     let id: Int
